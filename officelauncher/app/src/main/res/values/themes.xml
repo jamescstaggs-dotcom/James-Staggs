@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.OfficeLauncher" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_gradient</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:colorAccent">@color/gold</item>
+    </style>
+
+    <!-- Serif, all-caps, letter-spaced row headings -->
+    <style name="RowLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.18</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_dim</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+</resources>

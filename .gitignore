@@ -1,0 +1,6 @@
+officelauncher/.gradle/
+officelauncher/build/
+officelauncher/app/build/
+officelauncher/local.properties
+officelauncher/.idea/
+.DS_Store

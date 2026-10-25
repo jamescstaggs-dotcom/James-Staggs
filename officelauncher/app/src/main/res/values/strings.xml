@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Office Launcher</string>
+    <string name="app_title">STANFORD REMODELING</string>
+    <string name="row_watch">Watch</string>
+    <string name="row_inputs">Inputs &amp; tools</string>
+</resources>

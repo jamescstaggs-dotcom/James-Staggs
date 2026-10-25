@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palette pulled from the Stanford Remodeling logo -->
+    <color name="bg_top">#4E5B63</color>
+    <color name="bg_bottom">#222B32</color>
+    <color name="tile">#1F272E</color>
+    <color name="tile_stroke">#2B353D</color>
+    <color name="gold">#D4B06A</color>
+    <color name="text">#F2F2F2</color>
+    <color name="text_dim">#AEB8BF</color>
+</resources>

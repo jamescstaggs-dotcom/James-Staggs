@@ -1,0 +1,58 @@
+name: Build Office Launcher APK
+
+on:
+  push:
+    paths:
+      - "officelauncher/**"
+      - ".github/workflows/build-launcher.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-launcher
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: "platforms;android-34 build-tools;34.0.0"
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.7"
+
+      - name: Build debug APK
+        working-directory: officelauncher
+        run: gradle assembleDebug --no-daemon --stacktrace
+
+      - name: Copy APK into repo
+        run: |
+          mkdir -p apk
+          cp officelauncher/app/build/outputs/apk/debug/app-debug.apk apk/OfficeLauncher.apk
+          ls -la apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OfficeLauncher-apk
+          path: apk/OfficeLauncher.apk
+
+      - name: Commit APK back to the branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apk/OfficeLauncher.apk
+          if git diff --cached --quiet; then echo "APK unchanged"; exit 0; fi
+          git commit -m "Build OfficeLauncher.apk [skip ci]"
+          git push
