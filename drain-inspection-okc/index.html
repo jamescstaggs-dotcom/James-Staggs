@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Dirt Drain Inspection | Sewer Camera Inspection in Oklahoma City</title>
+<meta name="description" content="Sewer camera and drain line inspections across the Oklahoma City metro. Pre-purchase sewer scopes, backup diagnosis, root and belly detection, with footage-stamped video reports.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Red Dirt Drain Inspection",
+  "description": "Sewer camera and drain line inspection in the Oklahoma City metro.",
+  "telephone": "+1-405-555-0142",
+  "areaServed": ["Oklahoma City", "Edmond", "Norman", "Moore", "Yukon", "Mustang", "Midwest City", "Del City", "Bethany", "Nichols Hills", "The Village", "Piedmont", "Choctaw"],
+  "address": {"@type": "PostalAddress", "addressLocality": "Oklahoma City", "addressRegion": "OK", "addressCountry": "US"}
+}
+</script>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Red Dirt Drain Inspection home">
+    <span class="brand-mark" aria-hidden="true"><span></span></span>
+    <span class="brand-text">Red Dirt<small>Drain Inspection · OKC</small></span>
+  </a>
+  <nav class="nav" aria-label="Main">
+    <a href="#why">Why OKC lines fail</a>
+    <a href="#run">Pipe run</a>
+    <a href="#decoder">Year-built decoder</a>
+    <a href="#services">Services</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-small" href="#book">Book a scope</a>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO: CAMERA MONITOR ============ -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="rec"></span> Live from under Oklahoma City</p>
+    <h1>The red dirt is moving your sewer line. <em>Let's go look.</em></h1>
+    <p class="lede">We run a camera through your drain line from the cleanout to the city main. You watch it with us, and you leave with a video report that marks every root, crack, belly and offset joint by the foot.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="#book">Schedule an inspection</a>
+      <a class="btn btn-ghost" href="tel:+14055550142">(405) 555-0142</a>
+    </div>
+    <ul class="hero-facts">
+      <li><strong>Same-week</strong> appointments metro-wide</li>
+      <li><strong>Video + written</strong> report within 24 hrs</li>
+      <li><strong>No upsell:</strong> we inspect, we don't dig</li>
+    </ul>
+  </div>
+
+  <div class="monitor" aria-label="Simulated sewer camera feed">
+    <div class="screen">
+      <div class="tunnel" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hud hud-tl">
+        <span class="rec"></span> REC
+        <span class="hud-dim" id="hudClock">00:00:00</span>
+      </div>
+      <div class="hud hud-tr">6&Prime; VCP &middot; MAIN LATERAL</div>
+      <div class="hud hud-bl">DIST <b id="hudDist">000.0</b> FT</div>
+      <div class="hud hud-br">INCL <b id="hudIncl">-1.2</b>&deg;</div>
+      <div class="hud hud-center" id="hudNote">CLEANOUT &rarr; STREET</div>
+      <div class="scanlines" aria-hidden="true"></div>
+    </div>
+    <div class="monitor-foot">
+      <span>RD-CAM 02</span>
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>ROOT INTRUSION @ 23.5 FT</span><span>OFFSET JOINT @ 41.0 FT</span><span>BELLY / STANDING WATER 52&ndash;58 FT</span><span>CAST IRON SCALE @ 6.0 FT</span><span>ORANGEBURG DEFORMATION @ 34.2 FT</span><span>CLEAR TO MAIN @ 78.0 FT</span>
+    <span>ROOT INTRUSION @ 23.5 FT</span><span>OFFSET JOINT @ 41.0 FT</span><span>BELLY / STANDING WATER 52&ndash;58 FT</span><span>CAST IRON SCALE @ 6.0 FT</span><span>ORANGEBURG DEFORMATION @ 34.2 FT</span><span>CLEAR TO MAIN @ 78.0 FT</span>
+  </div>
+</div>
+
+<!-- ============ WHY OKC ============ -->
+<section class="section" id="why">
+  <div class="section-head">
+    <p class="eyebrow">Local ground truth</p>
+    <h2>Why sewer lines in central Oklahoma have a hard life</h2>
+    <p>Drain problems here have local causes. The soil, the weather and the age of the house each do their own kind of damage.</p>
+  </div>
+
+  <div class="soil">
+    <div class="soil-diagram" aria-hidden="true">
+      <div class="layer sky"><span class="house"></span></div>
+      <div class="layer topsoil">topsoil</div>
+      <div class="layer clay">
+        <span class="pipe"><span class="pipe-joint j1"></span><span class="pipe-joint j2"></span><span class="pipe-joint j3"></span></span>
+        <span class="root r1"></span><span class="root r2"></span>
+        <span class="clay-label">expansive red clay</span>
+      </div>
+      <div class="layer shale">Permian red bed shale</div>
+    </div>
+
+    <div class="cards cards-3">
+      <article class="card">
+        <span class="card-num">01</span>
+        <h3>Shrink-swell clay</h3>
+        <p>Much of the metro sits on clay that swells when it's wet and shrinks and cracks in a dry August. That constant movement works pipe joints loose and can sag a line into a <em>belly</em> where waste sits.</p>
+      </article>
+      <article class="card">
+        <span class="card-num">02</span>
+        <h3>Thirsty trees</h3>
+        <p>Elms, silver maples, sweetgums and Bradford pears go after the moisture in your sewer line during a drought. A hairline gap in a joint is all it takes for roots to get in and fill the pipe.</p>
+      </article>
+      <article class="card">
+        <span class="card-num">03</span>
+        <h3>Aging materials</h3>
+        <p>Older neighborhoods like Mesta Park, Crown Heights, Heritage Hills and the Paseo still have clay tile, cast iron and sometimes Orangeburg pipe that is long past its expected life.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERACTIVE PIPE RUN ============ -->
+<section class="section section-dark" id="run">
+  <div class="section-head">
+    <p class="eyebrow">Interactive</p>
+    <h2>Ride along on a sample inspection</h2>
+    <p>Drag the camera down a typical 80-foot lateral from a 1950s OKC ranch house. Each marker is a finding the way it appears in our reports.</p>
+  </div>
+
+  <div class="run">
+    <div class="run-track">
+      <div class="run-labels"><span>House cleanout</span><span>City main</span></div>
+      <div class="run-pipe" id="runPipe">
+        <div class="run-fill" id="runFill"></div>
+        <button class="marker" data-ft="6" style="--pos:7.5%" aria-label="Finding at 6 feet"></button>
+        <button class="marker" data-ft="23.5" style="--pos:29.4%" aria-label="Finding at 23.5 feet"></button>
+        <button class="marker" data-ft="41" style="--pos:51.25%" aria-label="Finding at 41 feet"></button>
+        <button class="marker" data-ft="55" style="--pos:68.75%" aria-label="Finding at 55 feet"></button>
+        <button class="marker" data-ft="78" style="--pos:97.5%" aria-label="Finding at 78 feet"></button>
+        <div class="run-cam" id="runCam" aria-hidden="true"></div>
+      </div>
+      <label class="sr-only" for="runSlider">Camera distance in feet</label>
+      <input type="range" id="runSlider" min="0" max="80" step="0.5" value="0">
+      <div class="run-scale" aria-hidden="true"><span>0</span><span>20</span><span>40</span><span>60</span><span>80 ft</span></div>
+    </div>
+
+    <div class="finding" id="finding" aria-live="polite">
+      <div class="finding-top">
+        <span class="finding-ft" id="fFt">0.0 FT</span>
+        <span class="grade" id="fGrade" data-g="0">Grade &ndash;</span>
+      </div>
+      <h3 id="fTitle">Camera at the cleanout</h3>
+      <p id="fBody">Drag the slider or tap a marker to move the camera down the line.</p>
+      <p class="finding-rec" id="fRec"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ YEAR BUILT DECODER ============ -->
+<section class="section" id="decoder">
+  <div class="section-head">
+    <p class="eyebrow">Quick tool</p>
+    <h2>What's probably buried under your house?</h2>
+    <p>Enter the year the home was built. We'll show you what sewer pipe was standard in OKC at the time and what usually goes wrong with it.</p>
+  </div>
+
+  <div class="decoder">
+    <form class="decoder-form" id="decoderForm">
+      <label for="yearInput">Year built</label>
+      <div class="decoder-row">
+        <input id="yearInput" type="number" inputmode="numeric" min="1889" max="2026" placeholder="e.g. 1962" required>
+        <button class="btn" type="submit">Decode</button>
+      </div>
+      <div class="era-chips" role="group" aria-label="Quick pick an era">
+        <button type="button" data-year="1925">1920s</button>
+        <button type="button" data-year="1955">1950s</button>
+        <button type="button" data-year="1975">1970s</button>
+        <button type="button" data-year="1995">1990s</button>
+        <button type="button" data-year="2015">2010s</button>
+      </div>
+    </form>
+    <div class="decoder-out" id="decoderOut" aria-live="polite">
+      <p class="decoder-empty">Results show up here. Land-run bungalow or new build in Mustang, every era has its own weak spots.</p>
+    </div>
+  </div>
+  <p class="fineprint">This is a general guide. Many older homes have had sections replaced over the years, and the camera is the only way to know what's actually there.</p>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section section-clay" id="services">
+  <div class="section-head">
+    <p class="eyebrow">What we do</p>
+    <h2>Inspection only. No conflict of interest.</h2>
+    <p>We don't sell excavation or pipe replacement, so we have nothing to gain from finding a problem. You get an honest look and a report you can take to any plumber.</p>
+  </div>
+
+  <div class="cards cards-3">
+    <article class="card card-service">
+      <h3>Pre-purchase sewer scope</h3>
+      <p>The one thing a standard home inspection doesn't cover. We scope the line during your option period and send a report your agent can use in negotiations.</p>
+      <span class="price">from $195</span>
+    </article>
+    <article class="card card-service">
+      <h3>Backup &amp; slow-drain diagnosis</h3>
+      <p>Gurgling toilets, a wet spot in the yard, backups after a storm. We find the cause and the exact footage so the repair is done once and done right.</p>
+      <span class="price">from $225</span>
+    </article>
+    <article class="card card-service">
+      <h3>Line locating &amp; depth</h3>
+      <p>A sonde in the camera head transmits its position. We mark the line's path and depth on the ground so a repair crew digs one hole instead of five.</p>
+      <span class="price">add $75</span>
+    </article>
+    <article class="card card-service">
+      <h3>Post-cleaning verification</h3>
+      <p>Your line was just jetted or augered. Was all of the root mass actually cleared? We check it before you pay for the work.</p>
+      <span class="price">from $165</span>
+    </article>
+    <article class="card card-service">
+      <h3>Repair &amp; lining sign-off</h3>
+      <p>After a spot repair, pipe burst or CIPP liner install, we record the new line from end to end so you have proof the work holds.</p>
+      <span class="price">from $195</span>
+    </article>
+    <article class="card card-service">
+      <h3>Landlord &amp; property manager plans</h3>
+      <p>Yearly scopes across a portfolio, with a running condition history so you can budget repairs before they turn into emergencies.</p>
+      <span class="price">ask for a quote</span>
+    </article>
+  </div>
+</section>
+
+<!-- ============ REPORT ============ -->
+<section class="section" id="report">
+  <div class="report">
+    <div class="report-copy">
+      <p class="eyebrow">What you walk away with</p>
+      <h2>A report you can actually read</h2>
+      <ul class="checks">
+        <li>Full HD video of the entire run with the footage counter on screen</li>
+        <li>Timestamped clips of every finding so you can skip right to the issue</li>
+        <li>A severity grade from 1 to 5 for each defect, in plain English</li>
+        <li>Pipe material, diameter and depth at key points</li>
+        <li>A shareable link for your agent, seller, insurer or plumber</li>
+      </ul>
+    </div>
+    <div class="report-sheet" aria-label="Sample report excerpt">
+      <div class="sheet-head">
+        <span>INSPECTION REPORT</span>
+        <span>#RD-2026-1147</span>
+      </div>
+      <dl class="sheet-meta">
+        <div><dt>Property</dt><dd>NW 23rd area, OKC</dd></div>
+        <div><dt>Built</dt><dd>1948</dd></div>
+        <div><dt>Material</dt><dd>VCP / Cast iron</dd></div>
+        <div><dt>Length</dt><dd>78.0 ft</dd></div>
+      </dl>
+      <table class="sheet-table">
+        <thead><tr><th>Ft</th><th>Observation</th><th>Grade</th></tr></thead>
+        <tbody>
+          <tr><td>6.0</td><td>Tuberculation, cast iron</td><td><span class="g g2">2</span></td></tr>
+          <tr><td>23.5</td><td>Root mass at joint, 40%</td><td><span class="g g4">4</span></td></tr>
+          <tr><td>41.0</td><td>Offset joint, &frac34;&Prime;</td><td><span class="g g3">3</span></td></tr>
+          <tr><td>52&ndash;58</td><td>Belly, 30% water depth</td><td><span class="g g3">3</span></td></tr>
+          <tr><td>78.0</td><td>Tie-in to city main</td><td><span class="g g1">1</span></td></tr>
+        </tbody>
+      </table>
+      <p class="sheet-sum"><b>Summary:</b> Spot repair recommended at 23.5 ft. Monitor the belly. Re-scope in 12 months.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AREA ============ -->
+<section class="section section-dark" id="area">
+  <div class="section-head">
+    <p class="eyebrow">Service area</p>
+    <h2>All over the metro, from Edmond to Norman</h2>
+  </div>
+  <ul class="area-list">
+    <li>Oklahoma City</li><li>Edmond</li><li>Norman</li><li>Moore</li><li>Yukon</li><li>Mustang</li><li>Midwest City</li><li>Del City</li><li>Bethany</li><li>Warr Acres</li><li>Nichols Hills</li><li>The Village</li><li>Piedmont</li><li>Choctaw</li><li>Newcastle</li><li>Harrah</li>
+  </ul>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="section-head">
+    <p class="eyebrow">Questions</p>
+    <h2>Things people ask us before the camera goes in</h2>
+  </div>
+  <div class="faq">
+    <details>
+      <summary>Doesn't my home inspector already check the sewer line?</summary>
+      <p>Usually not. A standard home inspection runs the faucets and flushes the toilets, but nobody looks inside the buried line. A sewer repair can run from a few thousand dollars to well over $10,000, so a scope during your option period is cheap insurance.</p>
+    </details>
+    <details>
+      <summary>How long does an inspection take?</summary>
+      <p>Most homes take 45 to 75 minutes. You're welcome to watch the monitor with us. We'll explain what we're seeing as we go.</p>
+    </details>
+    <details>
+      <summary>What if there's no cleanout?</summary>
+      <p>We can often get in through a roof vent or by pulling a toilet. If there's no reasonable access, we'll tell you before we start, and you won't pay for a trip that goes nowhere.</p>
+    </details>
+    <details>
+      <summary>Who's responsible for the line, me or the city?</summary>
+      <p>In Oklahoma City, the homeowner is generally responsible for the service lateral all the way to where it ties into the public main, including the part under the street or easement. Our report marks where the tie-in is.</p>
+    </details>
+    <details>
+      <summary>Will you fix what you find?</summary>
+      <p>No, and that's on purpose. We only inspect, so we have no reason to exaggerate. Take our report to any licensed plumber for a repair bid. We're happy to come back and verify the repair afterward.</p>
+    </details>
+    <details>
+      <summary>How often should I have my line scoped?</summary>
+      <p>Every two to three years for older homes with large trees nearby, right before you buy any house, and any time you have a backup. Newer PVC lines can go much longer.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ BOOK ============ -->
+<section class="section section-clay" id="book">
+  <div class="book">
+    <div class="book-copy">
+      <p class="eyebrow">Book it</p>
+      <h2>Get eyes on your line this week</h2>
+      <p>Tell us a little about the property and we'll call you back to set a time. If something is backing up right now, call us. A real person answers.</p>
+      <a class="phone-big" href="tel:+14055550142">(405) 555-0142</a>
+      <p class="hours">Mon&ndash;Sat &middot; 7am&ndash;7pm &middot; Emergency diagnosis available</p>
+    </div>
+    <form class="book-form" id="bookForm" novalidate>
+      <div class="field">
+        <label for="fName">Name</label>
+        <input id="fName" name="name" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="fPhone">Phone</label>
+        <input id="fPhone" name="phone" type="tel" autocomplete="tel" required>
+      </div>
+      <div class="field">
+        <label for="fAddr">Property address or neighborhood</label>
+        <input id="fAddr" name="address" autocomplete="street-address">
+      </div>
+      <div class="field">
+        <label for="fType">What do you need?</label>
+        <select id="fType" name="service">
+          <option>Pre-purchase sewer scope</option>
+          <option>Backup / slow drain diagnosis</option>
+          <option>Post-cleaning verification</option>
+          <option>Repair or liner sign-off</option>
+          <option>Property manager plan</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field field-wide">
+        <label for="fMsg">Anything we should know?</label>
+        <textarea id="fMsg" name="message" rows="3" placeholder="Closing date, symptoms, where the cleanout is..."></textarea>
+      </div>
+      <button class="btn btn-dark field-wide" type="submit">Request my inspection</button>
+      <p class="form-status field-wide" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div>
+    <span class="brand-text">Red Dirt<small>Drain Inspection · OKC</small></span>
+    <p>Sewer camera inspection for the Oklahoma City metro.</p>
+  </div>
+  <div class="footer-hud">
+    <span>END OF RUN</span>
+    <span>&copy; <span id="year">2026</span> Red Dirt Drain Inspection</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
